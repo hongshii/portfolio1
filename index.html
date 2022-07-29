@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ko" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Portfolio</title>
+		<!-- <meta name="description" content="A page background effect where SVG shapes morph and transform on scroll" />
+		<meta name="keywords" content="background, svg, morph, animation, scroll, shape, web development, css, javascript" />
+		<meta name="author" content="Codrops" /> -->
+		<!-- <link rel="stylesheet" type="text/css" href="css/normalize.css" /> -->
+		<!-- <link rel="stylesheet" type="text/css" href="sponsor/pater.css" /> 
+		<link rel="shortcut icon" href="favicon.ico">-->
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/basic.css">
+		<link rel="stylesheet" href="css/reponsive.css">
+		
+		<script>
+			document.documentElement.className = 'js';
+			var supportsCssVars = function() {
+				var s = document.createElement('style'),
+				support;
+
+				s.innerHTML = "root: { --tmp-var: bold; }";
+				document.head.appendChild(s);
+				support = !!(window.CSS && window.CSS.supports && window.CSS.supports('font-weight', 'var(--tmp-var)'));
+				s.parentNode.removeChild(s);
+				return support;
+			}
+			if (!supportsCssVars()) alert('Please view this demo in a modern browser that supports CSS Variables.')
+		</script>
+	</head>
+	<body class="demo-1 loading">
+		<div class="morph-wrap">
+			<svg class="morph" width="1400" height="770" viewBox="0 0 1400 770">
+				<path d="M 262.9,252.2 C 210.1,338.2 212.6,487.6 288.8,553.9 372.2,626.5 511.2,517.8 620.3,536.3 750.6,558.4 860.3,723 987.3,686.5 1089,657.3 1168,534.7 1173,429.2 1178,313.7 1096,189.1 995.1,130.7 852.1,47.07 658.8,78.95 498.1,119.2 410.7,141.1 322.6,154.8 262.9,252.2 Z"/>
+			</svg>
+		</div>
+		<header>
+			<div class="header-wrap">
+				<h1><a href="#">이미지</a></h1>
+				<div class="util-menu">
+					<a href="#">HOME</a>
+					<a href="#about">ABOUT</a>
+					<a href="#portfolio">PORTFOLIO</a>
+					<a href="#contact">CONTACT</a>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section class="section1 content-wrap">
+				<div class="s1">
+					<ul class="Words">
+						<li class="Words-line">
+							<p>&nbsp;</p>
+							<p>WEB DEIGNER</p>
+						</li>
+						<li class="Words-line">
+							<p>WEB DEIGNER</p>
+							<p>& PUBLISHER</p>
+						</li>
+						<li class="Words-line">
+							<p>& PUBLISHER</p>
+							<p>PORTFOLIO</p>
+						</li>
+						<li class="Words-line">
+							<p>PORTFOLIO</p>
+							<p>BY</p>
+						</li>
+						<li class="Words-line">
+							<p>BY</p>
+							<p>HONG</p>
+						</li>
+						<li class="Words-line">
+							<p>HONG</p>
+							<p>YEO JUNG</p>
+						</li>
+						<li class="Words-line">
+							<p>YEO JUNG</p>
+							<p>&nbsp;</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+			
+			<section id="about" class="section2 content-wrap">
+				<div class="s2-inner">
+					<article class="profile-1">
+						<h2>WHO AM I?</h2>
+						<div class="profile-top">
+							<img src="img/profilepic.png" alt="프로필사진">
+							<div class="top-right">
+								<div class="name">
+									<p>NAME</p>
+									<p>BIRTH</p>
+									<p>ADDRESS</p>
+								</div>
+								<div class="contents">
+									<p>홍여정</p>
+									<p>1994. 09. 30(만 27세)</p>
+									<p>경기도 시흥시 목감동</p>
+								</div>
+							</div>
+						</div>
+						<div class="profile-bottom">
+							<div class="edu">
+								<div class="name">
+									<p>EDUCATION</p>
+								</div>
+								<div class="contents">
+									<p>- 연성대학교 유아교육과</p>
+									<p>- 강남그린컴퓨터학원</p>
+									<p>&nbsp &nbsp UI/UX 반응형 웹디자인&웹퍼블리셔 수료</p>
+								</div>
+							</div>
+							<div class="license">
+								<div class="name">
+									<p>LICENSE &nbsp &nbsp &nbsp</p>
+								</div>
+								<div class="contents">
+									<p>- GTQi 일러스트 1급</p>
+									<p>- 컴퓨터 활용능력 2급</p>
+									<p>- ITQ 파워포인트 A</p>
+									<p>- GTQ 포토샵 1급</p>
+								</div>
+							</div>
+						</div>
+					</article>
+					<article class="profile-2">
+							<h2>SKILL</h2>
+							<div class="skill">
+								<div class="skillbar clearfix " data-percent="90%">
+									<div class="skillbar-title" style="background: linear-gradient(#5d929a, #487a82)  ;"><span>html5</span></div>
+									<div class="skillbar-bar" style="background: linear-gradient(#5d929a, #487a82);"></div>
+								</div>
+								<div class="skillbar clearfix " data-percent="85%">
+									<div class="skillbar-title" style="background: linear-gradient(#5d929a, #487a82);"><span>css</span></div>
+									<div class="skillbar-bar" style="background: linear-gradient(#5d929a, #487a82);"></div>
+								</div>
+								<div class="skillbar clearfix " data-percent="70%">
+									<div class="skillbar-title" style="background: linear-gradient(#5d929a, #487a82);"><span>javascript</span></div>
+									<div class="skillbar-bar" style="background: linear-gradient(#5d929a, #487a82);"></div>
+								</div>
+								<div class="skillbar clearfix " data-percent="75%">
+									<div class="skillbar-title" style="background: linear-gradient(#5d929a, #487a82);"><span>bootstrap</span></div>
+									<div class="skillbar-bar" style="background: linear-gradient(#5d929a, #487a82);"></div>
+								</div>
+								<div class="skillbar clearfix " data-percent="90%">
+									<div class="skillbar-title" style="background: linear-gradient(#5d929a, #487a82);"><span>photoshop</span></div>
+									<div class="skillbar-bar" style="background: linear-gradient(#5d929a, #487a82);"></div>
+								</div>
+								<div class="skillbar clearfix " data-percent="80%">
+									<div class="skillbar-title" style="background: linear-gradient(#5d929a, #487a82);"><span>illust</span></div>
+									<div class="skillbar-bar" style="background: linear-gradient(#5d929a, #487a82);"></div>
+								</div>
+							</div>
+					</article>
+				</div>
+			</section>
+
+			<section id="portfolio" class="section3">
+				
+				<article class="content-wrap content--full">
+					<div class="content-layout layout-left">
+						<div class="content__item-img">
+							<img src="img/mmca_mockup.png" alt="국립현대미술관">
+						</div>
+						<div class="content__title-wrap">
+							<h2>WEB SITE RENUAL</h2>
+							<p>국립현대미술관</p>
+							<a href="https://hhyj0930.cafe24.com/01/html/mmca.html" class="viewsite" target="_blank">VIEW SITE</a>
+						</div>
+					</div>
+					<span></span>
+				</article>
+
+				<article class="content-wrap content--full">
+					<div class="content-layout layout-right">
+						<div class="content__title-wrap">
+							<h2>WEB SITE DESIGN</h2>
+							<p>서로공방</p>
+							<a href="https://hongshii.github.io/gongbang_web/" class="viewsite" target="_blank">VIEW SITE</a>
+						</div>
+						<div class="content__item-img">
+							<img src="img/gongbang_pc_mockup.png" alt="서로공방pc">
+						</div>
+					</div>
+					<span></span>
+				</article>
+
+				<article class="content-wrap content--full mobile">
+					<div class="content-layout layout-left">
+						<div class="content__item-img">
+							<img src="img/gongbang-m-mockup.png" alt="서로공방mobile">
+						</div>
+						<div class="content__title-wrap">
+							<h2>MOBILE SITE DESIGN</h2>
+							<p>서로공방</p>
+							<a href="https://hongshii.github.io/gongbang_mobile/" class="viewsite" target="_blank">VIEW SITE</a>
+						</div>
+					</div>
+					<span></span>
+				</article>
+
+				<article class="content-wrap content--full">
+					<div class="content-layout layout-right">
+						<div class="content__title-wrap">
+							<h2>RESPONSIVE SITE</h2>
+							<p>밀크T아이</p>
+							<a href="https://hongshii.github.io/milkT/#" class="viewsite" target="_blank">VIEW SITE</a>
+						</div>
+						<div class="content__item-img">
+							<img src="img/milkt.png" alt="부트스트랩반응형">
+						</div>
+					</div>
+					<span></span>
+				</article>
+
+			</section>
+
+			<section id="contact" class="section4 content-wrap">
+				<div class="content content--layout content--layout-1">
+					<img class="content__img" src="img/3.jpg" alt="Some image" />
+					<h3 class="content__title">contact</h3>
+					<p class="content__author">Thank you!</p>
+					<p class="content__link">010 - 7202 - 2427<br>ghdduwjd123@naver.com</p>
+				</div>
+			</section>
+			<!-- Related demos -->
+			<section class="content content--related">
+			</section>
+		</main>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/anime.min.js"></script>
+		<script src="js/scrollMonitor.js"></script>
+		<script src="js/jquery-3.6.0.min.js"></script>
+		<script src="js/demo1.js"></script>
+	</body>
+</html>
