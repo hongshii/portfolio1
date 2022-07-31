@@ -47,7 +47,7 @@ main > .section2 {
   font-size: 1.1vw;
 }
 .section2 .s2-inner {
-  width: 77%; height: 75%;
+  width: 77%; height: 77%;
   padding: 2% 0;
   background: rgba(255,255,255,0.4);
   display: flex;
@@ -61,7 +61,7 @@ main > .section2 {
 }
 article.profile-1 {
   flex: 1;
-  padding: 2% 6%;
+  padding: 2% 0 2% 6%;
   display: flex;
   flex-direction: column;
   font-family: 'Noto Sans KR', sans-serif;

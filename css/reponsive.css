@@ -3,7 +3,7 @@
 @media(max-width:1400px){
     .util-menu a {font-size: 25px;}
     
-    .section2 .s2-inner { padding: 4% 0;}
+    .section2 .s2-inner { padding: 3% 0;}
     
     .skillbar { height: 20px;}
     .skillbar-title {height: 20px;}
@@ -11,10 +11,13 @@
     .skillbar-bar {height: 20px;}
 }
 @media(max-width:1240px){
-    .section2 .s2-inner h2 {font-size: 25px;  margin-bottom: 10%;}
+    .section2 .s2-inner h2 {font-size: 30px;  margin-bottom: 10%;}
+    .section2 .name {font-size: 14px; }
+    .section2 .contents {font-size: 14px; }
+    .profile-bottom .contents {width: 100%; margin-left: 5%;}
 }
 @media(max-width:1080px){
-    .section2 .s2-inner { padding: 8% 0; height: 65%;}
+    .section2 .s2-inner {height: 70%;}
 
     .profile-top img {display: none;}
     .profile-top .top-right {padding: 2% 0  2% 2% ;}
@@ -22,23 +25,21 @@
     
 }
 @media(max-width:950px){
-    .profile-bottom .contents {width: 100%; margin-left: 5%;}
+    .s1 .Words {transform: scale(1.1) translate(-30%);}
+    .section2 .s2-inner {width: 90%;}
 }
 @media(max-width:720px){
+    .s1 .Words {transform: scale(0.8) translate(-25%);}
+
     .section2 .s2-inner {display: block; padding: 4% 0; height: 85%;}
-    .section2 .s2-inner h2 {font-size: 25px;  margin-bottom: 5%;}
+    .section2 .s2-inner h2 {font-size: 30px;  margin-bottom: 5%;}
     .profile-top .top-right {padding-top: 0; padding-bottom: 0 ;}
+    .profile-top img {display: block; margin-bottom: 10px;}
     .profile-bottom {padding-top: 2%;}
     .profile-bottom .contents {width: auto; margin-left: 0;}
     .profile-bottom .edu, .profile-bottom .license {padding: 0 ;}
     
-    .skill {width:  90%; margin: auto;}
-    .skillbar {height: 15px;}
-    .skillbar-title {height: 15px;}
-    .skillbar-title span {height: 15px; line-height: 15px;}
-    .skillbar-bar {height: 15px;}
+    .profile-2 {display: none;}
 }
 @media(max-width:650px){
-    .section2 .s2-inner { padding: 6% 0; height: 80%;}
-    .profile-bottom .contents {font-size: 0.8vw;}
 }

@@ -36,6 +36,7 @@
   -webkit-font-kerning: normal;
   -webkit-text-size-adjust: 100%;
   transform: scale(1.2) translate(-35%);
+  transition: 0.3s;
 }
 
 /*
