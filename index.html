@@ -38,17 +38,40 @@
 				<path d="M 262.9,252.2 C 210.1,338.2 212.6,487.6 288.8,553.9 372.2,626.5 511.2,517.8 620.3,536.3 750.6,558.4 860.3,723 987.3,686.5 1089,657.3 1168,534.7 1173,429.2 1178,313.7 1096,189.1 995.1,130.7 852.1,47.07 658.8,78.95 498.1,119.2 410.7,141.1 322.6,154.8 262.9,252.2 Z"/>
 			</svg>
 		</div>
-		<header>
-			<div class="header-wrap">
-				<h1><a href="#">이미지</a></h1>
-				<div class="util-menu">
-					<a href="#">HOME</a>
-					<a href="#about">ABOUT</a>
-					<a href="#portfolio">PORTFOLIO</a>
-					<a href="#contact">CONTACT</a>
+
+		<div class="header_container">
+			<header>
+				<div class="header_main">
+					<h1><a href="#">홍여정</a></h1>
+					<button class="trigger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
 				</div>
-			</div>
-		</header>
+				<div class="gnb">
+					<div class="navbar">
+						<ul class="navbar_gnb">
+							<li>
+								<a href="#">HOME</a>
+							</li>
+							<li>
+								<a href="#about">ABOUT</a>
+							</li>
+							<li>
+								<a href="#portfolio">PORTFOLIO</a>
+							</li>
+							<li>
+								<a href="#contact">CONTACT</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</header>
+		</div>
+		
+		<div class="dark"></div>
+
 		<main>
 			<section class="section1 content-wrap">
 				<div class="s1">
@@ -178,27 +201,17 @@
 
 				<article class="content-wrap content--full">
 					<div class="content-layout layout-right">
+						<div class="content__item-img m-block">
+							<img src="img/gongbang.png" alt="서로공방pc">
+						</div>
 						<div class="content__title-wrap">
 							<h2>WEB SITE DESIGN</h2>
 							<p>서로공방</p>
-							<a href="https://hongshii.github.io/gongbang_web/" class="viewsite" target="_blank">VIEW SITE</a>
+							<a href="https://hongshii.github.io/gongbang_web/" class="viewsite" target="_blank">WEB SITE</a>
+							<a href="https://hongshii.github.io/gongbang_mobile/" class="viewsite" target="_blank">MOBILE SITE</a>
 						</div>
-						<div class="content__item-img">
-							<img src="img/gongbang_pc_mockup.png" alt="서로공방pc">
-						</div>
-					</div>
-					<span></span>
-				</article>
-
-				<article class="content-wrap content--full mobile">
-					<div class="content-layout layout-left">
-						<div class="content__item-img">
-							<img src="img/gongbang-m-mockup.png" alt="서로공방mobile">
-						</div>
-						<div class="content__title-wrap">
-							<h2>MOBILE SITE DESIGN</h2>
-							<p>서로공방</p>
-							<a href="https://hongshii.github.io/gongbang_mobile/" class="viewsite" target="_blank">VIEW SITE</a>
+						<div class="content__item-img m-none">
+							<img src="img/gongbang.png" alt="서로공방pc">
 						</div>
 					</div>
 					<span></span>
@@ -206,12 +219,15 @@
 
 				<article class="content-wrap content--full">
 					<div class="content-layout layout-right">
+						<div class="content__item-img m-block">
+							<img src="img/milkt.png" alt="부트스트랩반응형">
+						</div>
 						<div class="content__title-wrap">
 							<h2>RESPONSIVE SITE</h2>
 							<p>밀크T아이</p>
 							<a href="https://hongshii.github.io/milkT/#" class="viewsite" target="_blank">VIEW SITE</a>
 						</div>
-						<div class="content__item-img">
+						<div class="content__item-img m-none">
 							<img src="img/milkt.png" alt="부트스트랩반응형">
 						</div>
 					</div>

@@ -17,16 +17,129 @@
     .profile-bottom .contents {width: 100%; margin-left: 5%;}
 }
 @media(max-width:1080px){
+    /* header */
+    header { position:relative; width:auto; margin:0 10px;  }
+    .header_main h1 { margin-left:0; }
+    .trigger { 
+        position:relative; 
+        display:block; 
+        float:right; 
+        outline:none; 
+        width:24px; height:24px; 
+        background:transparent; 
+        vertical-align:bottom; 
+        margin:15px 10px 0 0; 
+        border:0; 
+        cursor:pointer; 
+    }
+    .trigger span { 
+        position:absolute; 
+        left:0; width:24px; 
+        height:2px; 
+        border-radius:1px; 
+        background:#fff; 
+        transition:.5s;
+    }
+    .trigger span:nth-child(1) { top:4px; }
+    .trigger span:nth-child(2) { top:50%; transform:translateY(-50%);}
+    .trigger span:nth-child(3) { bottom:4px;}
+
+    .trigger.open span:nth-child(1) { transform:rotate(45deg); margin-top:7px }
+    .trigger.open span:nth-child(2) { width:0; }
+    .trigger.open span:nth-child(3) { transform:rotate(-45deg); margin-bottom:7px   }
+    .gnb { 
+        position: fixed;
+        top: 0; right: -250px; bottom: 0;
+        width: 250px;
+        background:#2D2D2D ;
+    }
+    .navbar {
+        padding-bottom: 100px;
+    }
+    .navbar ul.navbar_gnb { 
+        position: static;
+        margin: 50px 0 0 15px;  
+        text-align:left; 
+    }
+    .navbar .navbar_gnb > li { 
+        position: relative;
+        display:block; 
+        height: 60px;
+    }
+    .navbar .navbar_gnb > li > a { 
+        display: inline-block;
+        text-align: left;
+        font-size: 24px;
+        color:#fff; 
+        transition: 0.4s;
+    }
+        
+    /* section2 profile */
     .section2 .s2-inner {height: 70%;}
 
     .profile-top img {display: none;}
     .profile-top .top-right {padding: 2% 0  2% 2% ;}
     .profile-bottom .edu, .profile-bottom .license {padding: 2% 0 ;}
+
+    /* section3 portfolio */
+    .viewsite {
+        width: 120px; height: 40px;
+        padding: 0;
+        border-radius: 40px;
+        line-height: 40px;
+        font-size: 14px;
+    }
+
+
     
 }
 @media(max-width:950px){
     .s1 .Words {transform: scale(1.1) translate(-30%);}
     .section2 .s2-inner {width: 90%;}
+
+     /* section3 portfolio */
+    .content-layout {
+        display: block;
+        border: 1px solid red;
+    }
+    .content__item-img {
+        padding: 0;
+        width:60vw;
+        margin: auto;
+    }
+    .content__item-img img {
+        width: 100%; 
+    }
+    .content__title-wrap {
+    text-align: center;
+    margin: 5% auto;
+    }
+    .layout-right .content__title-wrap {
+        text-align: center;
+        margin:5% auto;
+    }
+    .layout-right .m-none {
+        display: none;
+    }
+    .layout-right .m-block {
+        display: block;
+    }
+    .content__title-wrap h2 {
+        font-size: 6vw;
+    }
+      .content__title-wrap p {
+        padding-top: 2%;
+        font-size: 2.5vw;
+        color: #ddd;
+        font-family: 'Noto Sans KR', sans-serif;
+      }
+      
+    .content--full span{
+        display: none;
+    }
+    .viewsite {
+        margin-top: 5%;
+    }
 }
 @media(max-width:720px){
     .s1 .Words {transform: scale(0.8) translate(-25%);}

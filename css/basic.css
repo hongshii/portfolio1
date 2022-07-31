@@ -4,33 +4,57 @@
 body {font-family: 'Roboto Condensed', sans-serif;}
 
 /* header */
+
+.header_container {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  width:100%; height:60px; 
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  z-index:10000;
+}
+.header_container.on {background: #71989F;} 
 header {
-    position: fixed;
-    width: 100%; height: 11vh;
-    /* background: #71989F; */
-    border-bottom: 1px solid #fff;
-    z-index: 30;
+  width: 90%; height: 100%; 
+  margin: auto;
+  border: 3px solid red;
+  position: relative;
+}
+.header_main h1 {
+  position: absolute;
+  left: 0;
+  margin-top: 20px;
+  width: 163px; height: 21px;
+  margin-left:-20px; 
+  background: url('../img/logo.png') no-repeat;
+  text-indent: -9999px;
+  border: 3px solid blue;
+}
+.navbar ul.navbar_gnb {
+  position: absolute;
+  right: 0;
+  text-align:center; 
+}
+.navbar .navbar_gnb > li {
+    display: inline-block;
+    margin: 0 16px;
+}
+.navbar_gnb a {
+    display: block;
+    font-size: 1.7vw;
     color: #fff;
 }
-header.on {background: #71989F;} 
-.header-wrap {
-    display: flex;
-    justify-content:space-between;
-    width:86%; margin: auto;
-    height: 11vh;
-    border: 1px solid yellow;
-    line-height: 11vh;
-}
-.header-wrap > h1 > a {}
-.header-wrap > h1 {}
-.header-wrap .util-menu {
-}
-.util-menu a {
-    font-size: 1.7vw;
-    margin-left: 3.5vw;
-}
-.util-menu a:hover {
+.navbar_gnb a:hover {
     border-bottom: 2px solid #fff;
+}
+
+.dark {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.2);
+  z-index:100;
+  /* margin 설정, 안쪽으로 나 자신(꽉 차있는 상태)이 줄어들면서 표현*/
 }
 
 /* main */
@@ -183,10 +207,6 @@ article.profile-2 h2 {
 .content__item-img img {
 	width: 40vw;
 }
-.mobile .content__item-img img {
-  width: 28vw;
-  margin-left: 5vw;
-}
 .content__title-wrap {
   flex: 2;
   text-align: right;
@@ -196,6 +216,9 @@ article.profile-2 h2 {
   flex: 1;
   text-align: left;
   margin:3% 0 0 15%;
+}
+.layout-right .m-block {
+  display: none;
 }
 .content__title-wrap h2 {
   font-size: 4.2vw;
@@ -211,27 +234,21 @@ article.profile-2 h2 {
 
 .content--full span{
   position: absolute;
-  margin-top: 2%;
+  margin-top: 15px;
   width: 70%; height: 2px;
-  background: #fff;
-}
-.mobile span{
-  position: absolute;
-  right: 15%;
-  margin-bottom: 15%;
-  width: 60%; height: 2px;
   background: #fff;
 }
 .viewsite {
   display:inline-block; 
   border-radius: 40px;
-  padding: 2% 6%;
+  padding: 1% 6%;
   background: #557378;
   text-align: center;
   line-height: 40px;
   color: #fff;
   margin-top: 10vh;
   font-size: 1.1vw;
+  margin-right: 5px;
   letter-spacing: 2px;
 }
 .viewsite:hover {
