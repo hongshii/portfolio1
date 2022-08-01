@@ -22,15 +22,19 @@ header {
 .header_main h1 {
   position: absolute;
   left: 0;
-  margin-top: 20px;
-  width: 163px; height: 21px;
+  margin-top: 16px;
+  width: 100px; height: 28px;
   margin-left:-20px; 
-  background: url('../img/logo.png') no-repeat;
+  background: url('../img/logo-wh.png') no-repeat center center/ 100%;
+  background-size: contain;
   text-indent: -9999px;
+}
+.trigger{
+  display: none;
 }
 .navbar ul.navbar_gnb {
   position: absolute;
-  right: 0;
+  right: 0; 
   text-align:center; 
 }
 .navbar .navbar_gnb > li {
@@ -40,10 +44,11 @@ header {
 .navbar_gnb a {
     display: block;
     font-size: 1.7vw;
+    line-height: 60px;
     color: #fff;
 }
 .navbar_gnb a:hover {
-    border-bottom: 2px solid #fff;
+    text-decoration: underline;
 }
 
 .dark {
