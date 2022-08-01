@@ -17,7 +17,6 @@ body {font-family: 'Roboto Condensed', sans-serif;}
 header {
   width: 90%; height: 100%; 
   margin: auto;
-  border: 3px solid red;
   position: relative;
 }
 .header_main h1 {
@@ -28,7 +27,6 @@ header {
   margin-left:-20px; 
   background: url('../img/logo.png') no-repeat;
   text-indent: -9999px;
-  border: 3px solid blue;
 }
 .navbar ul.navbar_gnb {
   position: absolute;
@@ -71,7 +69,7 @@ main > .section2 {
   font-size: 1.1vw;
 }
 .section2 .s2-inner {
-  width: 77%; height: 77%;
+  width: 77%; height: 85%;
   padding: 2% 0;
   background: rgba(255,255,255,0.4);
   display: flex;
@@ -140,6 +138,7 @@ article.profile-1 .contents{
 /** section2-right **/
 
 article.profile-2 {
+  position: relative;
   flex: 1;
   padding: 2% 6%;
   font-size: 1vw;
@@ -187,8 +186,28 @@ article.profile-2 h2 {
   border-radius: 30px;
   background: #6adcfa;
 }
-
-
+.resume {
+  position: absolute;
+  right: 10%;
+  display:inline-block; 
+  border-radius: 5px;
+  padding: 10px 6%;
+  background: #ddd;
+  text-align: center;
+  line-height: 10px;
+  color: #557378;
+  margin-top: 5%;
+  font-size: 1.1vw;
+  font-weight: 600;
+  margin-right: 5px;
+  letter-spacing: 2px;
+}
+.resume:hover {
+  background: #454545 ;
+  text-align: center;
+  line-height: 10px;
+  color: #fff;
+}
 /* section3 */
 .section3 {}
 .content--full {
@@ -210,12 +229,12 @@ article.profile-2 h2 {
 .content__title-wrap {
   flex: 2;
   text-align: right;
-  margin:3% 15% 0 0 ;
+  margin:3% 10% 0 0 ;
 }
 .layout-right .content__title-wrap {
   flex: 1;
   text-align: left;
-  margin:3% 0 0 15%;
+  margin:3% 0 0 10%;
 }
 .layout-right .m-block {
   display: none;
@@ -235,8 +254,14 @@ article.profile-2 h2 {
 .content--full span{
   position: absolute;
   margin-top: 15px;
-  width: 70%; height: 2px;
+  width: 78%; height: 2px;
   background: #fff;
+}
+.layout-right span{
+  left: 10%;
+}
+.layout-left span{
+  right: 10%;
 }
 .viewsite {
   display:inline-block; 

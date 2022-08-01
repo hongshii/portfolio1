@@ -129,7 +129,7 @@
     }
       .content__title-wrap p {
         padding-top: 2%;
-        font-size: 2.5vw;
+        font-size: 3vw;
         color: #ddd;
         font-family: 'Noto Sans KR', sans-serif;
       }
@@ -144,7 +144,7 @@
 @media(max-width:720px){
     .s1 .Words {transform: scale(0.8) translate(-25%);}
 
-    .section2 .s2-inner {display: block; padding: 4% 0; height: 85%;}
+    .section2 .s2-inner {display: block; padding: 4% 0; height: 90%;}
     .section2 .s2-inner h2 {font-size: 30px;  margin-bottom: 5%;}
     .profile-top .top-right {padding-top: 0; padding-bottom: 0 ;}
     .profile-top img {display: block; margin-bottom: 10px;}

@@ -30,6 +30,10 @@
 				return support;
 			}
 			if (!supportsCssVars()) alert('Please view this demo in a modern browser that supports CSS Variables.')
+
+			function mobileOpen() {
+            window.open('https://hongshii.github.io/gongbang_mobile/','서로공방 모바일', 'width=500px; height=760px; left=400; top=200;')
+        }
 		</script>
 	</head>
 	<body class="demo-1 loading">
@@ -179,14 +183,16 @@
 									<div class="skillbar-bar" style="background: linear-gradient(#5d929a, #487a82);"></div>
 								</div>
 							</div>
+							
+							<a href="https://www.canva.com/design/DAFICSPpAk0/SpIeIYgBcWinVAwYM8RQxw/view?utm_content=DAFICSPpAk0&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink#1" class="resume" target="_blank">RESUME</a>
 					</article>
 				</div>
 			</section>
 
 			<section id="portfolio" class="section3">
 				
-				<article class="content-wrap content--full">
-					<div class="content-layout layout-left">
+				<article class="content-wrap content--full layout-left" id="con-left">
+					<div class="content-layout">
 						<div class="content__item-img">
 							<img src="img/mmca_mockup.png" alt="국립현대미술관">
 						</div>
@@ -199,8 +205,8 @@
 					<span></span>
 				</article>
 
-				<article class="content-wrap content--full">
-					<div class="content-layout layout-right">
+				<article class="content-wrap content--full layout-right">
+					<div class="content-layout">
 						<div class="content__item-img m-block">
 							<img src="img/gongbang.png" alt="서로공방pc">
 						</div>
@@ -208,7 +214,7 @@
 							<h2>WEB SITE DESIGN</h2>
 							<p>서로공방</p>
 							<a href="https://hongshii.github.io/gongbang_web/" class="viewsite" target="_blank">WEB SITE</a>
-							<a href="https://hongshii.github.io/gongbang_mobile/" class="viewsite" target="_blank">MOBILE SITE</a>
+							<a href="#none" class="viewsite" onclick="mobileOpen()">MOBILE SITE</a>
 						</div>
 						<div class="content__item-img m-none">
 							<img src="img/gongbang.png" alt="서로공방pc">
@@ -217,8 +223,8 @@
 					<span></span>
 				</article>
 
-				<article class="content-wrap content--full">
-					<div class="content-layout layout-right">
+				<article class="content-wrap content--full layout-right">
+					<div class="content-layout">
 						<div class="content__item-img m-block">
 							<img src="img/milkt.png" alt="부트스트랩반응형">
 						</div>
